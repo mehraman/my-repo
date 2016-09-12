@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		
+		<style>
+			
+		</style>
+		<script src="client.js"></script>
+	</head>
+	<body>
+		<div id="ad">
+			<table>
+				<tr><td>Partner</td><td><input type="text" id="partner" value="1"/></td></tr>
+				<tr><td>Duration(seconds)</td><td><input type="text" id="time" value="10"/></td></tr>
+				<tr><td>Ad Content</td><td><input type="text" id="content" value="I am Comcast"/></td></tr>
+				<tr><td></td><td align=right><input type="button" value="Create Ad" onclick="create()"></td></tr>
+				<tr><td>Partner ID to Get</td><td><input type="text" id="getPID" value="1"/></td></tr>
+				<tr><td></td>
+				<td align=right><input type="button" value="Get Ad" onclick="getAd(getPID.value)"></td>
+				<td align=right><input type="button" value="Get All Ads" onclick="getAd('all')"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="display">
+		</div>
+		<br/>
+	</body>
+</html>
